@@ -11,11 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Validate HTML and CSS
-        uses: Cyb3r-Jak3/html5validator-action@v0.4
-        with:
-          format: text
-          css: true
-          action_debug: false
       - name: Look for broken links
         uses: peter-evans/link-checker@v1.2.2
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "."
+          arguments: --allow-missing-href
