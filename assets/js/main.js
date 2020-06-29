@@ -156,7 +156,11 @@
 
     // Initiate venobox (lightbox feature used in portofilo)
     $(document).ready(function() {
-      $('.venobox').venobox();
+      $('.venobox').venobox({
+        framewidth : '45%',                            // default: ''
+        frameheight: '45%',                            // default: ''
+        infinigall: true,
+      });
     });
   });
 
