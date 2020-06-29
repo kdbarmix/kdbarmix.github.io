@@ -1038,6 +1038,12 @@ section {
   left: -3px;
 }
 
+.pricing .special {
+  color: #ef6603;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
 .pricing h4 span {
   color: #bababa;
   font-size: 16px;
