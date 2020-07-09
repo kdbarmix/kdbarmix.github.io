@@ -334,6 +334,18 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
+#hero:after {
+  content: "";
+  background: url("/assets/img/portfolio/barmix1.webp") center;
+  background-size: cover;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
 #hero .carousel-container {
   display: flex;
   justify-content: center;
